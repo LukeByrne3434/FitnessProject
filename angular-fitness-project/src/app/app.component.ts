@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import usersData from './users.json';
+
+interface User{
+  id:Number;
+  name:String;
+  email:String;
+}
 
 @Component({
   selector: 'app-root',
@@ -7,4 +14,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-fitness-project';
+
+  users:User[]=usersData;
 }
